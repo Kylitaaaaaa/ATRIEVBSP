@@ -7,3 +7,7 @@ div.newsDiv{
 .newsContent{
 	margin-top:0px;
 }
+
+.boldline{
+	font-weight: bold;
+}
