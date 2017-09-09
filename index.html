@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
 <title>Home : Bangko Sentral ng Pilipinas</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,7 +51,7 @@ body {
 .column {
     float: left;
     padding: 10px;
-  background-color: #f1f1f1;
+  /*background-color: #f1f1f1;*/
 }
 
 /* Right column */
@@ -106,18 +107,64 @@ th, td {
     text-align: left;    
 }
 
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
 </style>
 
 
 </head>
 <body>
+  <div  class="searchBar">
+    <form method="get" action="http://www.bing.com/search">
+      <input type="text"   name="q" size="25" style="color:#808080;"
+      maxlength="255" value="Bing site search"
+      onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; name="Search""/>
+      <input type="submit" value="Go!" />
+      <input type="hidden" name="sitesearch" value="yoursite.com" />
+    </form>
+  </div>
+
 
 <div class="header">
+  <a href="#SkipNav" class="spaceright">Skip Navigation </a> 
   <h1><img src="bspLogo.jpg" height="40px" width="40px"/>Bangko Sentral ng Pilipinas</h1>
-  <a href="#SkipNav">Skip Navigation </a>
 
-  <a href="#" id="incfont">A+</a>
-  <a href="#" id="decfont">A-</a>
+  
+  
 </div>
 <div class="topnav">
   <a href="index.html"><p class="boldline">Home</p></a>
@@ -126,21 +173,20 @@ th, td {
   <a href="regulations.html"><p class="boldline">Rules & Regulations</p></a>
   <a href="aboutus.html"><p class="boldline">About Us</p></a> 
   <a href="contactus.html"><p class="boldline">Contact Us</p></a>
-  <div  class="searchBar">
-    <form method="get" action="http://www.bing.com/search">
-      <input type="text"   name="q" size="25" style="color:#808080;"
-      maxlength="255" value="Bing site search"
-      onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; name="Search""/>
-      <input type="submit" value="Go!" name="Search" />
-      <input type="hidden" name="sitesearch" value="yoursite.com" />
-    </form>
-  </div>
+</div>
+
+<div class="centertext spacetop">
+  
+
+  <a href="#" id="incfont"class="spaceright">A+</a>
+  <a href="#" id="decfont"class="spaceright">A-</a>
+  <a href="#" id="blackBGwhiteFG">High Contrast</a>
 </div>
 
 
 <div class="row">
   <div class="column left">
-    <h2>Updates</h2>
+    <h2 id="SkipNav">Updates</h2>
 
     <div class="newsDiv">
       <h4> <a href="news1.html"> Bangko Sentral ng Pilipinas Holds 2017 Awards Ceremony and Appreciation Lunch for Stakeholders in Region XI </a></h4>
@@ -243,6 +289,13 @@ $('#decfont').click(function(){
   if(curSize>=8)
     $('body').css('font-size', curSize);
 });
+
+$('#blackBGwhiteFG').click(function(){    
+  $('a').css("color", "yellow");
+
+  $('body').css("background-color", "black");
+  $('body').css("color", "yellow");
+}); 
 
 </script>
 </body>

@@ -4,8 +4,9 @@
 <title>News : Bangko Sentral ng Pilipinas</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
 <script src="content.js"></script>
+
 
 <link rel="stylesheet" href="content.css">
 
@@ -50,7 +51,6 @@ body {
 .column {
     float: left;
     padding: 10px;
-  background-color: #f1f1f1;
 }
 
 /* Left column*/
@@ -118,17 +118,6 @@ th, td {
 </style>
 </head>
 <body>
-
-<div class="header">
-  <h1><img src="bspLogo.jpg" height="40px" width="40px"/>Bangko Sentral ng Pilipinas</h1>
-</div>
-<div class="topnav">
-  <a href="index.html"><p class="boldline">Home</p></a>
-  <a href="news.html"><p class="boldline">News</p></a>
-  <a href="policies.html"><p class="boldline">Policies</p></a>
-  <a href="regulations.html"><p class="boldline">Rules & Regulations</p></a>
-  <a href="aboutus.html"><p class="boldline">About Us</p></a> 
-  <a href="contactus.html"><p class="boldline">Contact Us</p></a>
   <div  class="searchBar">
     <form method="get" action="http://www.bing.com/search">
       <input type="text"   name="q" size="25" style="color:#808080;"
@@ -138,12 +127,32 @@ th, td {
       <input type="hidden" name="sitesearch" value="yoursite.com" />
     </form>
   </div>
+
+<div class="header">
+  <a href="#SkipNav" class="spaceright">Skip Navigation </a> 
+  <h1><img src="bspLogo.jpg" height="40px" width="40px"/>Bangko Sentral ng Pilipinas</h1>
+</div>
+<div class="topnav">
+  <a href="index.html"><p class="boldline">Home</p></a>
+  <a href="news.html"><p class="boldline">News</p></a>
+  <a href="policies.html"><p class="boldline">Policies</p></a>
+  <a href="regulations.html"><p class="boldline">Rules & Regulations</p></a>
+  <a href="aboutus.html"><p class="boldline">About Us</p></a> 
+  <a href="contactus.html"><p class="boldline">Contact Us</p></a>
+</div>
+
+<div class="centertext spacetop">
+  <a href="#SkipNav" class="spaceright">Skip Navigation </a> 
+
+  <a href="#" id="incfont"class="spaceright">A+</a>
+  <a href="#" id="decfont"class="spaceright">A-</a>
+  <a href="#" id="blackBGwhiteFG">High Contrast</a>
 </div>
 
 
 <div class="row">
   <div class="column left">
-    <h2>News</h2>
+    <h2 id="SkipNav">News</h2>
 
 	 <div class="newsDiv">
       <h4> <a href="news1.html"> Bangko Sentral ng Pilipinas Holds 2017 Awards Ceremony and Appreciation Lunch for Stakeholders in Region XI </a></h4>
@@ -170,6 +179,10 @@ th, td {
   
 </div>
 
+<div class="spacebottom centertext">
+  <a href="#Top">Back To Top</a>
+</div>
+
 <div class="footer">
 <div class="topnav">
   <a href="#"><h3>Contact Us:</h3></a>
@@ -182,6 +195,28 @@ th, td {
   <p>2015@Bangko Sentral ng Pilipinas</p>
   <h4>ALL RIGHT RESERVED</h4>
 </div>
+
+<script type="text/javascript">
+$('#incfont').click(function(){    
+  curSize= parseInt($('body').css('font-size')) + 2;
+  if(curSize<=30)
+    $('body').css('font-size', curSize);
+});  
+
+$('#decfont').click(function(){    
+  curSize= parseInt($('body').css('font-size')) - 2;
+  if(curSize>=8)
+    $('body').css('font-size', curSize);
+});
+
+$('#blackBGwhiteFG').click(function(){    
+  $('a').css("color", "yellow");
+
+  $('body').css("background-color", "black");
+  $('body').css("color", "yellow");
+}); 
+
+</script>
 
 </body>
 </html>

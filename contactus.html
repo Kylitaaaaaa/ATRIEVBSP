@@ -4,8 +4,9 @@
 <title>Contact Us : Bangko Sentral ng Pilipinas</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
 <script src="content.js"></script>
+
 
 <link rel="stylesheet" href="content.css">
 
@@ -50,7 +51,6 @@ body {
 .column {
     float: left;
     padding: 10px;
-  background-color: #f1f1f1;
 }
 
 
@@ -119,17 +119,6 @@ th, td {
 </style>
 </head>
 <body>
-
-<div class="header">
-  <h1><img src="bspLogo.jpg" height="40px" width="40px"/>Bangko Sentral ng Pilipinas</h1>
-</div>
-<div class="topnav">
-  <a href="index.html"><p class="boldline">Home</p></a>
-  <a href="news.html"><p class="boldline">News</p></a>
-  <a href="policies.html"><p class="boldline">Policies</p></a>
-  <a href="regulations.html"><p class="boldline">Rules & Regulations</p></a>
-  <a href="aboutus.html"><p class="boldline">About Us</p></a> 
-  <a href="contactus.html"><p class="boldline">Contact Us</p></a>
   <div  class="searchBar">
     <form method="get" action="http://www.bing.com/search">
       <input type="text"   name="q" size="25" style="color:#808080;"
@@ -139,16 +128,36 @@ th, td {
       <input type="hidden" name="sitesearch" value="yoursite.com" />
     </form>
   </div>
+
+<div class="header">
+  <a href="#SkipNav" class="spaceright">Skip Navigation </a> 
+  <h1><img src="bspLogo.jpg" height="40px" width="40px"/>Bangko Sentral ng Pilipinas</h1>
+</div>
+<div class="topnav">
+  <a href="index.html"><p class="boldline">Home</p></a>
+  <a href="news.html"><p class="boldline">News</p></a>
+  <a href="policies.html"><p class="boldline">Policies</p></a>
+  <a href="regulations.html"><p class="boldline">Rules & Regulations</p></a>
+  <a href="aboutus.html"><p class="boldline">About Us</p></a> 
+  <a href="contactus.html"><p class="boldline">Contact Us</p></a>
+</div>
+
+<div class="centertext spacetop">
+  <a href="#SkipNav" class="spaceright">Skip Navigation </a> 
+
+  <a href="#" id="incfont"class="spaceright">A+</a>
+  <a href="#" id="decfont"class="spaceright">A-</a>
+  <a href="#" id="blackBGwhiteFG">High Contrast</a>
 </div>
 
 
 <div class="row">
 
   <div class="column left">
-  <h2>Contact Us:</h2>
+  <h2 id="SkipNav">Contact Us</h2>
     <div class="newsDiv">
       
-	<h2>Main Branch:</h2>
+	<h2>Main Branch</h2>
 	<h4> Bangko Sentral ng Pilipinas</h4>
 	<p>A. Mabini St. cor. P. Ocampo St., Malate Manila, Philippines 1004 <br>
 	Tel. No. : (632) 708.77.01 <br>
@@ -160,21 +169,21 @@ th, td {
 
    </div>
    <div class="newsDiv">
-   <h2>Regional Office:</h2>
+   <h2>Regional Office</h2>
 	<h4>BSP LA UNION REGIONAL OFFICE</h4>
 	<p>Quezon Avenue, City of San Fernando, La Union<br>
 	Tel. No: (072) 888-2083<br>
 	Fax No: (072) 888-3793</p>
 	
 	
-	<h2>Branches:</h2>
+	<h2>Branches</h2>
     <h4> San Fernando Branch </h4>
     <p>Greenfields Subd., Mac Arthur Highway,<br>
     Sindalan, San Fernando City, Pampanga<br>
     Tel Nos: (045) 455-4014<br>
     Fax No: (045) 455-3835</p>
 	
-	<h2>Branch:</h2>
+	<h2>Branch</h2>
 	
     <h4> Batac Branch</h4>
     <p>National Highway, Quiling Norte, Batac City, Ilocos Norte<br>
@@ -208,13 +217,13 @@ th, td {
  </div>
  
  <div class="newsDiv">
-   <h2>Regional Office:</h2>
+   <h2>Regional Office</h2>
 	<h4>BSP CEBU REGIONAL OFFICE</h4>
 	<p>Cor. Osmena Blvd & P. del Rosario Sts., Cebu City<br>
 	Tel. No: (032) 254-0973<br>
 	Fax No: (032) 254-0702</p>
 	
-	<h2>Branch:</h2>
+	<h2>Branch</h2>
    
     <h4>Bacolod Branch</h4>
 	Lacson cor. Luzuriaga Sts., Bacolod City<br>
@@ -227,7 +236,7 @@ th, td {
 	<h4>Roxas Branch</h4>
 	<p>Arnaldo Boulevard, Brgy. Baybay, Roxas City 5600<br>
 	Tel No: (036) 621-7823<br>
-	Telefax No.: (036) 621-7812</p><br>
+	Telefax No.: (036) 621-7812</p>
 	<h4>Dumaguete Branch</h4>
 	<p>North Road, Daro, Dumaguete City<br>
 	Tel No: (035) 422-9326<br>
@@ -239,7 +248,7 @@ th, td {
    </div>
    
    <div class="newsDiv">
-   <h2>Regional Office:</h2>
+   <h2>Regional Office</h2>
 	<h4>BSP DAVAO REGIONAL OFFICE</h4>
 	<p>Quirino Avenue, Davao City</br>
 	Tel. No: (082) 227-9051</br>
@@ -276,6 +285,10 @@ th, td {
   
 </div>
 
+<div class="spacebottom centertext">
+  <a href="#Top">Back To Top</a>
+</div>
+
 <div class="footer">
 <div class="topnav">
   <a href="#"><h4>Contact Us:</h4></a>
@@ -288,6 +301,28 @@ th, td {
   <p>2015@Bangko Sentral ng Pilipinas</p>
   <h4>ALL RIGHT RESERVED</h4>
 </div>
+
+<script type="text/javascript">
+$('#incfont').click(function(){    
+  curSize= parseInt($('body').css('font-size')) + 2;
+  if(curSize<=30)
+    $('body').css('font-size', curSize);
+});  
+
+$('#decfont').click(function(){    
+  curSize= parseInt($('body').css('font-size')) - 2;
+  if(curSize>=8)
+    $('body').css('font-size', curSize);
+});
+
+$('#blackBGwhiteFG').click(function(){    
+  $('a').css("color", "yellow");
+
+  $('body').css("background-color", "black");
+  $('body').css("color", "yellow");
+}); 
+
+</script>
 
 </body>
 </html>

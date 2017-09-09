@@ -4,8 +4,9 @@
 <title>Bangko Sentral ng Pilipinas</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
 <script src="content.js"></script>
+
 
 <link rel="stylesheet" href="content.css">
 <style>
@@ -20,16 +21,6 @@
 </style>
 </head>
 <body>
-<div class="header">
-  <h1><img src="bspLogo.jpg" height="40px" width="40px"/>Bangko Sentral ng Pilipinas</h1>
-</div>
-<div class="topnav">
-  <a href="index.html"><p class="boldline">Home</p></a>
-  <a href="news.html"><p class="boldline">News</p></a>
-  <a href="policies.html"><p class="boldline">Policies</p></a>
-  <a href="regulations.html"><p class="boldline">Rules & Regulations</p></a>
-  <a href="aboutus.html"><p class="boldline">About Us</p></a> 
-  <a href="contactus.html"><p class="boldline">Contact Us</p></a>
   <div  class="searchBar">
     <form method="get" action="http://www.bing.com/search">
       <input type="text"   name="q" size="25" style="color:#808080;"
@@ -39,12 +30,32 @@
       <input type="hidden" name="sitesearch" value="yoursite.com" />
     </form>
   </div>
+
+<div class="header">
+  <a href="#SkipNav" class="spaceright">Skip Navigation </a> 
+  <h1><img src="bspLogo.jpg" height="40px" width="40px"/>Bangko Sentral ng Pilipinas</h1>
+</div>
+<div class="topnav">
+  <a href="index.html"><p class="boldline">Home</p></a>
+  <a href="news.html"><p class="boldline">News</p></a>
+  <a href="policies.html"><p class="boldline">Policies</p></a>
+  <a href="regulations.html"><p class="boldline">Rules & Regulations</p></a>
+  <a href="aboutus.html"><p class="boldline">About Us</p></a> 
+  <a href="contactus.html"><p class="boldline">Contact Us</p></a>
+</div>
+
+<div class="centertext spacetop">
+  <a href="#SkipNav" class="spaceright">Skip Navigation </a> 
+
+  <a href="#" id="incfont"class="spaceright">A+</a>
+  <a href="#" id="decfont"class="spaceright">A-</a>
+  <a href="#" id="blackBGwhiteFG">High Contrast</a>
 </div>
 
 
 <div class="row">
 <div class="column left">
-	<h2>Monetary Policy Settings</h2>
+	<h2 id="SkipNav">Monetary Policy Settings</h2>
 	<p>At its meeting today, the Monetary Board decided to maintain the interest rate on the BSP's overnight reverse repurchase (RRP) facility at 3.0 percent. The corresponding interest rates on the overnight lending and deposit facilities were also kept steady. The reserve requirement ratios were likewise left unchanged.<br><br>
 
 	The Monetary Board's decision is based on its assessment that the inflation environment continues to be manageable. Latest forecasts indicate that average inflation is likely to settle near the lower edge of the 3.0 percent +/- 1.0 percentage point target range in 2016 and rise toward the mid-point of the target range in 2017 and 2018. The overall balance of risks surrounding the inflation outlook is now deemed to be broadly balanced. With global oil prices recovering, the risk of second-round effects from lower oil prices is likely to recede in the period ahead. Nevertheless, slower global economic activity remains a key downside risk to the inflation outlook. Given improved rainfall conditions and the shift to neutral weather conditions in the May-July period, the upside risks to food and utility prices due to El Nino are also seen to recede in the coming months. However, pending petitions for adjustments in electricity rates remain an upside risk to inflation. Meanwhile, inflation expectations remain broadly consistent with the inflation target over the policy horizon.<br><br>
@@ -70,6 +81,10 @@
   
 </div>
 
+<div class="spacebottom centertext">
+  <a href="#Top">Back To Top</a>
+</div>
+
 <div class="footer">
 <div class="topnav">
   <a href="#"><h3>Contact Us:</h3></a>
@@ -82,6 +97,28 @@
   <p>2015@Bangko Sentral ng Pilipinas</p>
   <h4>ALL RIGHT RESERVED</h4>
 </div>
+
+<script type="text/javascript">
+$('#incfont').click(function(){    
+  curSize= parseInt($('body').css('font-size')) + 2;
+  if(curSize<=30)
+    $('body').css('font-size', curSize);
+});  
+
+$('#decfont').click(function(){    
+  curSize= parseInt($('body').css('font-size')) - 2;
+  if(curSize>=8)
+    $('body').css('font-size', curSize);
+});
+
+$('#blackBGwhiteFG').click(function(){    
+  $('a').css("color", "yellow");
+
+  $('body').css("background-color", "black");
+  $('body').css("color", "yellow");
+}); 
+
+</script>
 
 </body>
 </html>

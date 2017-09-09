@@ -16,6 +16,14 @@ div.newsDiv{
   padding-bottom: 2%;
 }
 
+.spaceright{
+  padding-right: 2%;
+}
+
+.spacetop{
+  padding-top: 2%;
+}
+
 .centertext{
   text-align: center;
 }
@@ -27,6 +35,10 @@ div.newsDiv{
 body {
   margin: 0;
   background-color: #f1f1f1;
+}
+
+body, head{
+  font-family: Arial;
 }
 
 /*  header */
@@ -62,7 +74,7 @@ body {
 .column {
     float: left;
     padding: 10px;
-  background-color: #f1f1f1;
+  /*background-color: #f1f1f1;*/
 }
 
 /* Left column*/
@@ -104,10 +116,7 @@ body {
     bottom: 0;
 }
  .searchBar {
-  padding-top:20px;
-  position: absolute;
-    right: 20px;
-    width: 300px;
+  border-top:20px;
  }
 
  table, th, td {
