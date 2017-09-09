@@ -28,6 +28,11 @@ div.newsDiv{
   text-align: center;
 }
 
+.centerTable td 
+{
+    text-align:center; 
+}
+
 * {
     box-sizing: border-box;
 }
