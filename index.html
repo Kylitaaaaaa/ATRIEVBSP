@@ -20,7 +20,7 @@ body {
 
 /*  header */
 .header{
-	background-image: url("bspHeader.jpg");
+  background-image: url("bspHeader.jpg");
     background-color: #cccccc;
     padding: 20px;
     text-align: left;
@@ -36,7 +36,8 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 15px 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
 }
 
@@ -49,28 +50,28 @@ body {
 .column {
     float: left;
     padding: 10px;
-	background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 /* Left column*/
 .column.left {
-	border-left: 0px;
-	border-top: solid 1px #000;
-	border-right: solid 1px #000;
-	border-bottom: solid 1px #000;		
+  border-left: 0px;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  border-bottom: solid 1px #000;    
     width: 75%;
-	padding: 30px;
+  padding: 30px;
 }
 
 /* Right column */
 .column.right {Dun sa key rates,
-	border-left: 0px;
-	border-top: solid 1px #000;
-	border-right: solid 1px #000;
-	border-bottom: solid 1px #000;
+  border-left: 0px;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  border-bottom: solid 1px #000;
     border-color: #fffff;
     width: 25%;
-	padding: 10px;
+  padding: 10px;
 }
 
  
@@ -91,19 +92,28 @@ body {
 
 /* Style the footer */
 .footer {
-	border-left: 0px;
-	border-top: solid 1px #000;
-	border-right: solid 1px #000;
-	border-bottom: solid 1px #000;
+  border-left: 0px;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  border-bottom: solid 1px #000;
     padding: 5px;
     text-align: center;
 }
  .searchBar {
-	padding:35px;
-	position: absolute;
+  padding-top:20px;
+  position: absolute;
     right: 20px;
     width: 300px;
  }
+
+ table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
 </style>
 </head>
 <body>
@@ -119,13 +129,13 @@ body {
   <a href="#"><h3>About Us</h3></a>
   <a href="#"><h3>Contact Us</h3></a>
   <div  class="searchBar">
-  <form method="get" action="http://www.bing.com/search">
-	<input type="text"   name="q" size="25" style="color:#808080;"
-	maxlength="255" value="Bing site search"
-	onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
-	<input type="submit" value="Go!" />
-	<input type="hidden" name="sitesearch" value="yoursite.com" />
-</form>
+    <form method="get" action="http://www.bing.com/search">
+    <input type="text"   name="q" size="25" style="color:#808080;"
+    maxlength="255" value="Bing site search"
+    onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+    <input type="submit" value="Go!" />
+    <input type="hidden" name="sitesearch" value="yoursite.com" />
+  </form>
 </div>
 </div>
 
@@ -133,7 +143,7 @@ body {
 <div class="row">
   <div class="column left">
     <h2>Bangko Sentral Updates</h2>
-    
+
     <div class="newsDiv">
       <h4>Bangko Sentral ng Pilipinas Holds 2017 Awards Ceremony and Appreciation Lunch for Stakeholders in Region XI</h4>
       <h5 class = "newsContent">09.08.2017</h5>
@@ -154,7 +164,52 @@ body {
   </div>
   <div class="column right">
     <h2>Key Rates</h2>
-	insert table here
+      <table>
+      <tr>
+        <th colspan="2">09 September 2017</th>
+      </tr>
+      <tr>
+        <td>US$1.00</td>
+        <td>PhP 51.023</td>
+      </tr>
+      <tr>
+        <td>O/N Lending Rate</td>
+        <td>3.50%</td>
+      </tr>
+      <tr>
+        <td>O/N RRP Rate</td>
+        <td>3.00%</td>
+      </tr>
+      <tr>
+        <td>O/N Deposit Rate</td>
+        <td>2.50%</td>
+      </tr>
+      <tr>
+        <td>7-day TDF (WAIR)</td>
+        <td>3.3334%</td>
+      </tr>
+      <tr>
+        <td>28-day TDF (WAIR)</td>
+        <td>3.4910%</td>
+      </tr>
+      <tr>
+        <td>Inflation Rate (Aug'17)</td>
+        <td>3.1% (2006=100)</td>
+      </tr>
+      <tr>
+        <td>91-day T-bill Rate(29 Aug'17)</td>
+        <td>2.143</td>
+      </tr>
+      <tr>
+        <td>Gold Buying/troy oz.</td>
+        <td>US$ 1349.60</td>
+      </tr>
+      <tr>
+        <td>Silver Buying</td>
+        <td>US$ 18.10</td>
+      </tr>
+
+    </table>
   </div>
 </div>
 <div class="topnav">
