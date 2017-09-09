@@ -12,6 +12,14 @@ div.newsDiv{
 	font-weight: bold;
 }
 
+.spacebottom{
+  padding-bottom: 2%;
+}
+
+.centertext{
+  text-align: center;
+}
+
 * {
     box-sizing: border-box;
 }
